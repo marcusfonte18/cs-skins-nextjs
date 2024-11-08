@@ -14,10 +14,9 @@ model Item {
 }
 ```
 
-[ ] rota GET /items de todas as skins
-[ ] filtro por parametro como nome da skin, float, preco e categoria
-[ ] ordenacao por preco ou float
-
+[x] rota GET /items de todas as skins
+[x] filtro por parametro como nome da skin, float, preco e categoria
+[x] ordenacao por qualquer parâmetro
 
 # Frontend
 
