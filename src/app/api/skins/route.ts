@@ -1,5 +1,3 @@
-import { NextApiRequest, NextApiResponse } from "next";
-
 import dbConnect from "@/lib/mongodb";
 import Item from "@/app/models/Item";
 import { itemSchema, searchParamsSchema } from "./schema";
