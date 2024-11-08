@@ -1,27 +1,28 @@
 # Backend
 
 Model
-```
+
+```prisma
 model Item {
-  id                        String        @id @default(auto()) @map("_id") @db.ObjectId
-  name                      String
-  image                     String
-  category                  String
-  float                     String?
-  price                     Int
-  createdAt                 DateTime      @default(now())
-  updatedAt                 DateTime      @updatedAt
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String
+  image       String
+  category    String
+  float       String?
+  price       Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
 ```
 
-[x] rota GET /items de todas as skins
-[x] filtro por parametro como nome da skin, float, preco e categoria
-[x] ordenacao por qualquer parâmetro
+- [x] Criar rota `GET /items` para obter todas as skins.
+- [x] Adicionar filtro por parâmetros como nome da skin, float, preço e categoria.
+- [x] Adicionar ordenação por qualquer parâmetro.
 
 # Frontend
 
-[ ] Mostrar skins em forma de cards ou listas
-[ ] informacoes a ser mostradas: preço, nome, float e categoria
-[ ] ter uma barra de pesquisa para buscar skins pelo nome
-[ ] adicionar filtro para float, preço e categoria
-[ ] ordenação por preço ou float
+- [x] Mostrar skins em formato de cards ou listas.
+- [x] Exibir informações como: preço, nome, float e categoria.
+- [x] Adicionar barra de pesquisa para buscar skins pelo nome.
+- [x] Adicionar filtro para float, preço e categoria.
+- [x] Implementar ordenação por preço ou float.
